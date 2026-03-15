@@ -1,4 +1,5 @@
 import { Noto_Sans_Kannada } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 
 const kannada = Noto_Sans_Kannada({
@@ -14,7 +15,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="kn">
-      <body className={kannada.className}>{children}</body>
+      <body className={kannada.className}>
+        {children}
+        <GoogleAnalytics gaId="G-1KBKGVDSHX" />
+      </body>
     </html>
   );
 }
