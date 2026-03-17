@@ -52,7 +52,7 @@ export default async function ArticlePage({ params }) {
       </p>
 
       {/* Body */}
-      <div className="text-gray-800 leading-8 whitespace-pre-line">
+      <div className="text-white leading-8 whitespace-pre-line">
         {article.body}
       </div>
     </main>
