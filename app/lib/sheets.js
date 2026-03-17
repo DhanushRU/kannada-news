@@ -22,7 +22,7 @@ export async function getArticles() {
     category: row.c[2]?.v,
     summary: row.c[3]?.v,
     body: row.c[4]?.v,
-    date: row.c[5]?.v,
+    date: row.c[5]?.f || row.c[5]?.v,
     image: row.c[6]?.v,
   }));
 }

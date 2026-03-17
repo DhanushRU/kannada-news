@@ -15,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="kn">
-      <body className={kannada.className}>
+      <body className={`${kannada.className} bg-white text-black`}>
         {children}
         <GoogleAnalytics gaId="G-1KBKGVDSHX" />
       </body>
